@@ -204,6 +204,14 @@ The check is strict, and it should be: a signup counts only when the house's ref
 - **Trusting a provisional score.** A live rank is not a final rank: scores move as new entries arrive and the final grading uses a different scale. My BTC race entry looked profitable in backtest and finished −$3.62. The local grader is the only ground truth.
 - **Waiting until the deadline to submit.** The first submission is the one the checks can reject while you still have time to fix it.
 
+## After you submit
+
+- **Watch the board, don't refresh it.** Your rank moves as new entries arrive; a live rank is not a final rank. Check once or twice a day.
+- **Check your referrals, not just your rank.** For this bounty the score is verified signups: `GET /api/me/referrals` shows pending vs verified. A signup stays pending in review for at least a day.
+- **Revise only if you're out of the prize zone.** A resubmit replaces your entry (last one counts). Use a revision when you're outside the top 50 or the deadline is near — and only with a draft you already validated against the top 5.
+- **Keep the repository public and unchanged in ownership.** The final re-check reads the repo again: same repo, same owner, still public, README still carrying your referral code. Don't rewrite history after submitting.
+- **Claim within 7 days of the results.** Winners claim from the on-chain escrow; an unclaimed prize passes to the next entry in the standings.
+
 ## Questions
 
 - **Do I need to know how to code?** No — your agent writes the code. You need to read the bounty, steer the agent, judge the result, and decide what to submit.
